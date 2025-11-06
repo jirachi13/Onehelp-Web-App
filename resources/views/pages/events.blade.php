@@ -43,9 +43,9 @@
         </div>
 
         <!-- Events Grid -->
-        <div class="row g-4 justify-content-center">
+        <div class="row g-4">
             <!-- Event 1: Green Steps -->
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="col-md-6 col-lg-3">
                 <div class="event-card">
                     <div class="event-image">
                         <img src="{{ asset('images/events/green-steps.jpg') }}" alt="Green Steps: Urban Restoration and Eco-Awareness Drive">
@@ -74,7 +74,7 @@
             </div>
 
             <!-- Event 2: Read & Rise -->
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="col-md-6 col-lg-3">
                 <div class="event-card">
                     <div class="event-image">
                         <img src="{{ asset('images/events/read-rise.jpg') }}" alt="Read & Rise: Weekend Literacy Program">
@@ -103,7 +103,7 @@
             </div>
 
             <!-- Event 3: Kusina at Kabuhayan -->
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="col-md-6 col-lg-3">
                 <div class="event-card">
                     <div class="event-image">
                         <img src="{{ asset('images/events/kusina-kabuhayan.jpg') }}" alt="Kusina at Kabuhayan: Community Outreach Program">
@@ -132,7 +132,7 @@
             </div>
 
             <!-- Event 4: Care Companions -->
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="col-md-6 col-lg-3">
                 <div class="event-card">
                     <div class="event-image">
                         <img src="{{ asset('images/events/care-companions.jpg') }}" alt="Care Companions: Hospital Volunteer Program">
@@ -161,7 +161,7 @@
             </div>
 
             <!-- Event 5: Tindahan ng Pag-asa -->
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="col-md-6 col-lg-3">
                 <div class="event-card">
                     <div class="event-image">
                         <img src="{{ asset('images/events/tindahan-pag-asa.jpg') }}" alt="Tindahan ng Pag-asa: Pop-up Livelihood Fair">
