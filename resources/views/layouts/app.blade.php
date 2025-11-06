@@ -260,8 +260,6 @@
             display: flex;
             flex-direction: column;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            max-width: 400px;
-            margin: 0 auto;
         }
 
         .event-card:hover {
