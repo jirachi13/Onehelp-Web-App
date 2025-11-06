@@ -21,14 +21,16 @@ Route::view('/about', 'pages.about')->name('about');
 
 // Events Pages
 Route::get('/events', [EventPageController::class, 'index'])->name('events');
-Route::get('/events/{id}', [EventPageController::class, 'show'])->name('events.show');
 
-// Static Event Detail Pages
+// Static Event Detail Pages (must come before dynamic route)
 Route::get('/events/green-steps', [EventPageController::class, 'greenSteps'])->name('events.green-steps');
 Route::get('/events/read-rise', [EventPageController::class, 'readRise'])->name('events.read-rise');
 Route::get('/events/kusina-kabuhayan', [EventPageController::class, 'kusinaKabuhayan'])->name('events.kusina-kabuhayan');
 Route::get('/events/care-companions', [EventPageController::class, 'careCompanions'])->name('events.care-companions');
 Route::get('/events/tindahan-pag-asa', [EventPageController::class, 'tindahanPagAsa'])->name('events.tindahan-pag-asa');
+
+// Dynamic event route (must come after static routes)
+Route::get('/events/{id}', [EventPageController::class, 'show'])->name('events.show');
 
 // ===============================
 // AUTHENTICATION ROUTES

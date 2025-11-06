@@ -62,7 +62,7 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="event-card">
                     <div class="event-image">
-                        <img src="{{ asset('images/events/reforestation.jpg') }}" alt="Green Steps: Urban Restoration and Eco-Awareness Drive">
+                        <img src="{{ asset('images/events/green-steps.jpg') }}" alt="Green Steps: Urban Restoration and Eco-Awareness Drive">
                     </div>
                     <div class="event-content">
                         <h3 class="event-title">Green Steps: Urban Restoration and Eco-Awareness Drive</h3>
@@ -91,7 +91,7 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="event-card">
                     <div class="event-image">
-                        <img src="{{ asset('images/events/computer.png') }}" alt="Read & Rise: Weekend Literacy Program">
+                        <img src="{{ asset('images/events/read-rise.jpg') }}" alt="Read & Rise: Weekend Literacy Program">
                     </div>
                     <div class="event-content">
                         <h3 class="event-title">Read & Rise: Weekend Literacy Program</h3>
@@ -120,7 +120,7 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="event-card">
                     <div class="event-image">
-                        <img src="{{ asset('images/events/feeding-program.png') }}" alt="Kusina at Kabuhayan: Community Outreach Program">
+                        <img src="{{ asset('images/events/kusina-kabuhayan.jpg') }}" alt="Kusina at Kabuhayan: Community Outreach Program">
                     </div>
                     <div class="event-content">
                         <h3 class="event-title">Kusina at Kabuhayan: Community Outreach Program</h3>
@@ -149,7 +149,7 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="event-card">
                     <div class="event-image">
-                        <img src="{{ asset('images/events/coastal_cleanup.jpg') }}" alt="Care Companions: Hospital Volunteer Program">
+                        <img src="{{ asset('images/events/care-companions.jpg') }}" alt="Care Companions: Hospital Volunteer Program">
                     </div>
                     <div class="event-content">
                         <h3 class="event-title">Care Companions: Hospital Volunteer Program</h3>
@@ -178,7 +178,7 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="event-card">
                     <div class="event-image">
-                        <img src="{{ asset('images/events/feeding-program.png') }}" alt="Tindahan ng Pag-asa: Pop-up Livelihood Fair">
+                        <img src="{{ asset('images/events/tindahan-pag-asa.jpg') }}" alt="Tindahan ng Pag-asa: Pop-up Livelihood Fair">
                     </div>
                     <div class="event-content">
                         <h3 class="event-title">Tindahan ng Pag-asa: Pop-up Livelihood Fair</h3>

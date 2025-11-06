@@ -6,7 +6,7 @@
 <style>
     .event-detail-hero {
         background: linear-gradient(rgba(28, 77, 94, 0.85), rgba(28, 77, 94, 0.85)), 
-                    url('{{ asset('images/events/reforestation.jpg') }}') center/cover;
+                    url('{{ asset('images/events/green-steps.jpg') }}') center/cover;
         padding: 4rem 0;
         color: white;
         margin-bottom: 3rem;

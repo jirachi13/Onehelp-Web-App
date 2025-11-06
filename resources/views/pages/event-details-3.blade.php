@@ -6,7 +6,7 @@
 <style>
     .event-detail-hero {
         background: linear-gradient(rgba(28, 77, 94, 0.85), rgba(28, 77, 94, 0.85)), 
-                    url('{{ asset('images/events/feeding-program.png') }}') center/cover;
+                    url('{{ asset('images/events/kusina-kabuhayan.jpg') }}') center/cover;
         padding: 4rem 0;
         color: white;
         margin-bottom: 3rem;
