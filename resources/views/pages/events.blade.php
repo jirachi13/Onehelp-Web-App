@@ -48,7 +48,7 @@
                 <div class="event-card shadow-sm"
                     style="flex: 1 1 calc(33.333% - 2rem); max-width: 360px; min-width: 280px;">
                 <div class="event-image">
-                    @if ($event->images && count($event->images))
+                    @if ($event->images && $event->images->isNotEmpty())
                     <img src="{{ asset('storage/' . $event->images[0]->image_url) }}" 
                         alt="{{ $event->event_name }}">
                     @else

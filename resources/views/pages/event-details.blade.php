@@ -12,7 +12,7 @@
         <!-- EVENT IMAGE -->
         <div class="col-md-5">
           <div class="event-image-frame">
-            @if ($event->images && count($event->images))
+            @if ($event->images && $event->images->isNotEmpty())
               <img src="{{ asset('storage/' . $event->images[0]->image_url) }}" 
                    alt="{{ $event->event_name }}" 
                    class="event-image">
@@ -34,7 +34,7 @@
 
           @if (!empty($event->long_description))
           <div class="event-long-description mt-3">
-            {!! nl2br(e($event->long_description)) !!}
+            {!! nl2br(strip_tags($event->long_description)) !!}
           </div>
           @else
           <p class="lead text-secondary">{{ $event->description }}</p>
@@ -45,7 +45,7 @@
       </div>
 
       <!-- ADDITIONAL IMAGES -->
-      @if ($event->images && count($event->images) > 1)
+      @if ($event->images && $event->images->count() > 1)
       <div class="row mt-5 g-3">
         <h4 class="fw-bold text-navy mb-3">More Photos</h4>
         @foreach ($event->images as $image)
