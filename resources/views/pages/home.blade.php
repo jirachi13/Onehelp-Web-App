@@ -58,94 +58,147 @@
     <div class="container">
         <h2>FEATURED VOLUNTEER EVENTS</h2>
         <div class="row g-4">
-            <!-- Event Card 1 -->
-            <div class="col-md-6 col-lg-3">
+            <!-- Event Card 1: Green Steps -->
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="event-card">
                     <div class="event-image">
-                        <img src="{{ asset('images/events/coastal_cleanup.jpg') }}" alt="Coastal & Riverbank Cleanup Drive">
+                        <img src="{{ asset('images/events/reforestation.jpg') }}" alt="Green Steps: Urban Restoration and Eco-Awareness Drive">
                     </div>
                     <div class="event-content">
-                        <h3 class="event-title">Coastal & Riverbank Cleanup Drive</h3>
-                        <p class="event-org">Green Earth Alliance</p>
-                        <p class="event-description">Join us for a meaningful day of environmental action as we clean up our coastal areas and riverbanks. Help protect marine life and keep our waters clean.</p>
+                        <h3 class="event-title">Green Steps: Urban Restoration and Eco-Awareness Drive</h3>
+                        <p class="event-org">EcoHope PH</p>
+                        <p class="event-description">Join us in taking Green Steps toward a more sustainable Metro Manila! Help restore green spaces and educate communities about sustainable living.</p>
                         <div class="event-meta">
-                            <span><i class="far fa-calendar"></i> Dec 15, 2024</span>
+                            <span><i class="far fa-calendar"></i> Nov 16, 2025</span>
                             <span><i class="far fa-clock"></i> 8:00 AM</span>
                         </div>
                         <div class="event-tags">
                             <span class="event-tag">Environment</span>
                             <span class="event-tag">Outdoor</span>
-                        </div>
-                        <a href="{{ url('/events/1') }}" class="btn-view-details">View Details</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Event Card 2 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="event-card">
-                    <div class="event-image">
-                        <img src="{{ asset('images/events/feeding-program.png') }}" alt="Feed the City: Community Food Drive">
-                    </div>
-                    <div class="event-content">
-                        <h3 class="event-title">Feed the City: Community Food Drive</h3>
-                        <p class="event-org">Hope Foundation</p>
-                        <p class="event-description">Help us distribute food packages to families in need. Your time and effort can make a significant difference in fighting hunger in our community.</p>
-                        <div class="event-meta">
-                            <span><i class="far fa-calendar"></i> Dec 20, 2024</span>
-                            <span><i class="far fa-clock"></i> 2:00 PM</span>
-                        </div>
-                        <div class="event-tags">
                             <span class="event-tag">Community</span>
-                            <span class="event-tag">Food</span>
                         </div>
-                        <a href="{{ url('/events/2') }}" class="btn-view-details">View Details</a>
+                        <div class="event-sdgs">
+                            <img src="{{ asset('images/sdg-13-logo.svg') }}" alt="SDG 13" class="sdg-badge">
+                            <img src="{{ asset('images/sdg-15-logo.svg') }}" alt="SDG 15" class="sdg-badge">
+                            <img src="{{ asset('images/sdg-11-logo.svg') }}" alt="SDG 11" class="sdg-badge">
+                        </div>
+                        <a href="{{ route('events.green-steps') }}" class="btn-view-details">View Details</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Event Card 3 -->
-            <div class="col-md-6 col-lg-3">
+            <!-- Event Card 2: Read & Rise -->
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="event-card">
                     <div class="event-image">
-                        <img src="{{ asset('images/events/reforestation.jpg') }}" alt="Reforestation Project: Plant a Tree, Grow Hope">
+                        <img src="{{ asset('images/events/computer.png') }}" alt="Read & Rise: Weekend Literacy Program">
                     </div>
                     <div class="event-content">
-                        <h3 class="event-title">Reforestation Project: Plant a Tree, Grow Hope</h3>
-                        <p class="event-org">Nature Warriors PH</p>
-                        <p class="event-description">Be part of our mission to restore our forests. Join us in planting native tree species and contribute to a greener, more sustainable future for the next generation.</p>
+                        <h3 class="event-title">Read & Rise: Weekend Literacy Program</h3>
+                        <p class="event-org">BrightFutures Org</p>
+                        <p class="event-description">Be a changemaker in your own city! Join the Read & Rise weekend reading sessions and help children build confidence, comprehension, and a lifelong love of learning.</p>
                         <div class="event-meta">
-                            <span><i class="far fa-calendar"></i> Dec 22, 2024</span>
-                            <span><i class="far fa-clock"></i> 6:00 AM</span>
-                        </div>
-                        <div class="event-tags">
-                            <span class="event-tag">Environment</span>
-                            <span class="event-tag">Outdoor</span>
-                        </div>
-                        <a href="{{ url('/events/3') }}" class="btn-view-details">View Details</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Event Card 4 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="event-card">
-                    <div class="event-image">
-                        <img src="{{ asset('images/events/computer.png') }}" alt="Read to Lead: Children's Literacy Program">
-                    </div>
-                    <div class="event-content">
-                        <h3 class="event-title">Read to Lead: Children's Literacy Program</h3>
-                        <p class="event-org">Bright Futures Education</p>
-                        <p class="event-description">Share your love for reading with children! Help improve literacy rates by reading stories, teaching basic reading skills, and inspiring young minds to discover the joy of books.</p>
-                        <div class="event-meta">
-                            <span><i class="far fa-calendar"></i> Dec 28, 2024</span>
-                            <span><i class="far fa-clock"></i> 3:00 PM</span>
+                            <span><i class="far fa-calendar"></i> Every Saturday</span>
+                            <span><i class="far fa-clock"></i> 9:00 AM</span>
                         </div>
                         <div class="event-tags">
                             <span class="event-tag">Education</span>
                             <span class="event-tag">Children</span>
+                            <span class="event-tag">Literacy</span>
                         </div>
-                        <a href="{{ url('/events/4') }}" class="btn-view-details">View Details</a>
+                        <div class="event-sdgs">
+                            <img src="{{ asset('images/sdg-4-logo.svg') }}" alt="SDG 4" class="sdg-badge">
+                            <img src="{{ asset('images/sdg-10-logo.svg') }}" alt="SDG 10" class="sdg-badge">
+                            <img src="{{ asset('images/sdg-1-logo.svg') }}" alt="SDG 1" class="sdg-badge">
+                        </div>
+                        <a href="{{ route('events.read-rise') }}" class="btn-view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 3: Kusina at Kabuhayan -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="{{ asset('images/events/feeding-program.png') }}" alt="Kusina at Kabuhayan: Community Outreach Program">
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Kusina at Kabuhayan: Community Outreach Program</h3>
+                        <p class="event-org">Bayanihan Hands</p>
+                        <p class="event-description">Be part of a movement that nourishes both body and future. Join our weekend outreach program combining feeding activities with livelihood workshops for low-income families.</p>
+                        <div class="event-meta">
+                            <span><i class="far fa-calendar"></i> Nov 17, 2025</span>
+                            <span><i class="far fa-clock"></i> 8:00 AM</span>
+                        </div>
+                        <div class="event-tags">
+                            <span class="event-tag">Community</span>
+                            <span class="event-tag">Food</span>
+                            <span class="event-tag">Livelihood</span>
+                        </div>
+                        <div class="event-sdgs">
+                            <img src="{{ asset('images/sdg-2-logo.svg') }}" alt="SDG 2" class="sdg-badge">
+                            <img src="{{ asset('images/sdg-8-logo.svg') }}" alt="SDG 8" class="sdg-badge">
+                            <img src="{{ asset('images/sdg-10-logo.svg') }}" alt="SDG 10" class="sdg-badge">
+                        </div>
+                        <a href="{{ route('events.kusina-kabuhayan') }}" class="btn-view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 4: Care Companions -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="{{ asset('images/events/coastal_cleanup.jpg') }}" alt="Care Companions: Hospital Volunteer Program">
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Care Companions: Hospital Volunteer Program</h3>
+                        <p class="event-org">Heal Together PH</p>
+                        <p class="event-description">Make healing more human. Join the Care Companions program and help ease the hospital experience by offering support, companionship, and practical help in clinical settings.</p>
+                        <div class="event-meta">
+                            <span><i class="far fa-calendar"></i> Every Saturday</span>
+                            <span><i class="far fa-clock"></i> 9:00 AM</span>
+                        </div>
+                        <div class="event-tags">
+                            <span class="event-tag">Healthcare</span>
+                            <span class="event-tag">Community</span>
+                            <span class="event-tag">Support</span>
+                        </div>
+                        <div class="event-sdgs">
+                            <img src="{{ asset('images/sdg-3-logo.svg') }}" alt="SDG 3" class="sdg-badge">
+                            <img src="{{ asset('images/sdg-10-logo.svg') }}" alt="SDG 10" class="sdg-badge">
+                            <img src="{{ asset('images/sdg-17-logo.svg') }}" alt="SDG 17" class="sdg-badge">
+                        </div>
+                        <a href="{{ route('events.care-companions') }}" class="btn-view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 5: Tindahan ng Pag-asa -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="{{ asset('images/events/feeding-program.png') }}" alt="Tindahan ng Pag-asa: Pop-up Livelihood Fair">
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Tindahan ng Pag-asa: Pop-up Livelihood Fair</h3>
+                        <p class="event-org">Bayanihan Hands</p>
+                        <p class="event-description">Help families build sustainable futures! Join our weekend pop-up livelihood fair showcasing community-made products and offering hands-on workshops.</p>
+                        <div class="event-meta">
+                            <span><i class="far fa-calendar"></i> Nov 10-15, 2025</span>
+                            <span><i class="far fa-clock"></i> 9:00 AM</span>
+                        </div>
+                        <div class="event-tags">
+                            <span class="event-tag">Entrepreneurship</span>
+                            <span class="event-tag">Community</span>
+                            <span class="event-tag">Economic</span>
+                        </div>
+                        <div class="event-sdgs">
+                            <img src="{{ asset('images/sdg-8-logo.svg') }}" alt="SDG 8" class="sdg-badge">
+                            <img src="{{ asset('images/sdg-1-logo.svg') }}" alt="SDG 1" class="sdg-badge">
+                            <img src="{{ asset('images/sdg-10-logo.svg') }}" alt="SDG 10" class="sdg-badge">
+                        </div>
+                        <a href="{{ route('events.tindahan-pag-asa') }}" class="btn-view-details">View Details</a>
                     </div>
                 </div>
             </div>
