@@ -364,8 +364,9 @@ body {
     font-size: 0.85rem;
     transition: all 0.3s ease;
     text-align: center;
-    display: inline-block;
+    display: block;
     text-decoration: none;
+    width: 100%;
 }
 
 .btn-view-details:hover {
