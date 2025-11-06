@@ -78,7 +78,22 @@
                             <span><i class="far fa-clock"></i> {{ \Carbon\Carbon::parse($event->start_time)->format('g:i A') }}</span>
                         </div>
                         <div class="event-tags">
-                            <span class="event-tag">{{ $event->category }}</span>
+                            @if($event->category)
+                                <span class="event-tag">{{ $event->category }}</span>
+                            @endif
+                            @php
+                                // Add a secondary tag based on category for visual consistency
+                                $secondaryTags = [
+                                    'Environment' => 'Outdoor',
+                                    'Education' => 'Youth',
+                                    'Community' => 'Outreach',
+                                    'Health' => 'Care',
+                                ];
+                                $secondaryTag = $secondaryTags[$event->category] ?? null;
+                            @endphp
+                            @if($secondaryTag)
+                                <span class="event-tag">{{ $secondaryTag }}</span>
+                            @endif
                         </div>
                         <a href="{{ route('events.show', $event->event_id) }}" class="btn-view-details">View Details</a>
                     </div>

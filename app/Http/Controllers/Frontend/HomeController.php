@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $events = Event::with(['organization', 'images'])->latest()->take(4)->get(); // Fetch 4 latest events with relationships
+        $events = Event::with(['organization', 'images', 'skills'])->latest()->take(4)->get(); // Fetch 4 latest events with relationships
         return view('pages.home', compact('events'));
     }
 }
