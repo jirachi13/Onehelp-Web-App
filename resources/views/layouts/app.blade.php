@@ -260,6 +260,8 @@
             display: flex;
             flex-direction: column;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin: 0 auto;
         }
 
         .event-card:hover {
@@ -296,11 +298,15 @@
 
         .event-title {
             color: var(--navy);
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
             line-height: 1.3;
-            min-height: 3.6rem;
+            min-height: 4.2rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
 
         .event-org {
