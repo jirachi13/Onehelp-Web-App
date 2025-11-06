@@ -58,97 +58,38 @@
     <div class="container">
         <h2>FEATURED VOLUNTEER EVENTS</h2>
         <div class="row g-4">
-            <!-- Event Card 1 -->
+            @forelse($events as $event)
+            <!-- Event Card -->
             <div class="col-md-6 col-lg-3">
                 <div class="event-card">
                     <div class="event-image">
-                        <img src="{{ asset('images/events/coastal_cleanup.jpg') }}" alt="Coastal & Riverbank Cleanup Drive">
+                        @if($event->images && $event->images->count() > 0)
+                            <img src="{{ asset($event->images->first()->image_url) }}" alt="{{ $event->event_name }}">
+                        @else
+                            <img src="{{ asset('images/event-placeholder.jpg') }}" alt="{{ $event->event_name }}">
+                        @endif
                     </div>
                     <div class="event-content">
-                        <h3 class="event-title">Coastal & Riverbank Cleanup Drive</h3>
-                        <p class="event-org">Green Earth Alliance</p>
-                        <p class="event-description">Join us for a meaningful day of environmental action as we clean up our coastal areas and riverbanks. Help protect marine life and keep our waters clean.</p>
+                        <h3 class="event-title">{{ $event->event_name }}</h3>
+                        <p class="event-org">{{ $event->organization->org_name ?? 'Community Partner' }}</p>
+                        <p class="event-description">{{ $event->description }}</p>
                         <div class="event-meta">
-                            <span><i class="far fa-calendar"></i> Dec 15, 2024</span>
-                            <span><i class="far fa-clock"></i> 8:00 AM</span>
+                            <span><i class="far fa-calendar"></i> {{ \Carbon\Carbon::parse($event->event_date)->format('M d, Y') }}</span>
+                            <span><i class="far fa-clock"></i> {{ \Carbon\Carbon::parse($event->start_time)->format('g:i A') }}</span>
                         </div>
                         <div class="event-tags">
-                            <span class="event-tag">Environment</span>
-                            <span class="event-tag">Outdoor</span>
+                            <span class="event-tag">{{ $event->category }}</span>
                         </div>
-                        <a href="{{ url('/events/1') }}" class="btn-view-details">View Details</a>
+                        <a href="{{ route('events.show', $event->event_id) }}" class="btn-view-details">View Details</a>
                     </div>
                 </div>
             </div>
-
-            <!-- Event Card 2 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="event-card">
-                    <div class="event-image">
-                        <img src="{{ asset('images/events/feeding-program.png') }}" alt="Feed the City: Community Food Drive">
-                    </div>
-                    <div class="event-content">
-                        <h3 class="event-title">Feed the City: Community Food Drive</h3>
-                        <p class="event-org">Hope Foundation</p>
-                        <p class="event-description">Help us distribute food packages to families in need. Your time and effort can make a significant difference in fighting hunger in our community.</p>
-                        <div class="event-meta">
-                            <span><i class="far fa-calendar"></i> Dec 20, 2024</span>
-                            <span><i class="far fa-clock"></i> 2:00 PM</span>
-                        </div>
-                        <div class="event-tags">
-                            <span class="event-tag">Community</span>
-                            <span class="event-tag">Food</span>
-                        </div>
-                        <a href="{{ url('/events/2') }}" class="btn-view-details">View Details</a>
-                    </div>
-                </div>
+            @empty
+            <!-- Fallback if no events -->
+            <div class="col-12">
+                <p class="text-center">No featured events available at the moment. Check back soon!</p>
             </div>
-
-            <!-- Event Card 3 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="event-card">
-                    <div class="event-image">
-                        <img src="{{ asset('images/events/reforestation.jpg') }}" alt="Reforestation Project: Plant a Tree, Grow Hope">
-                    </div>
-                    <div class="event-content">
-                        <h3 class="event-title">Reforestation Project: Plant a Tree, Grow Hope</h3>
-                        <p class="event-org">Nature Warriors PH</p>
-                        <p class="event-description">Be part of our mission to restore our forests. Join us in planting native tree species and contribute to a greener, more sustainable future for the next generation.</p>
-                        <div class="event-meta">
-                            <span><i class="far fa-calendar"></i> Dec 22, 2024</span>
-                            <span><i class="far fa-clock"></i> 6:00 AM</span>
-                        </div>
-                        <div class="event-tags">
-                            <span class="event-tag">Environment</span>
-                            <span class="event-tag">Outdoor</span>
-                        </div>
-                        <a href="{{ url('/events/3') }}" class="btn-view-details">View Details</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Event Card 4 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="event-card">
-                    <div class="event-image">
-                        <img src="{{ asset('images/events/computer.png') }}" alt="Read to Lead: Children's Literacy Program">
-                    </div>
-                    <div class="event-content">
-                        <h3 class="event-title">Read to Lead: Children's Literacy Program</h3>
-                        <p class="event-org">Bright Futures Education</p>
-                        <p class="event-description">Share your love for reading with children! Help improve literacy rates by reading stories, teaching basic reading skills, and inspiring young minds to discover the joy of books.</p>
-                        <div class="event-meta">
-                            <span><i class="far fa-calendar"></i> Dec 28, 2024</span>
-                            <span><i class="far fa-clock"></i> 3:00 PM</span>
-                        </div>
-                        <div class="event-tags">
-                            <span class="event-tag">Education</span>
-                            <span class="event-tag">Children</span>
-                        </div>
-                        <a href="{{ url('/events/4') }}" class="btn-view-details">View Details</a>
-                    </div>
-                </div>
-            </div>
+            @endforelse
         </div>
     </div>
 </section>
