@@ -259,7 +259,6 @@
             height: 100%;
             display: flex;
             flex-direction: column;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         .event-card:hover {
@@ -296,56 +295,36 @@
 
         .event-title {
             color: var(--navy);
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
-            line-height: 1.3;
-            min-height: 4.2rem;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
         }
 
         .event-org {
             color: var(--navy);
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             font-weight: 600;
             margin-bottom: 1rem;
-            opacity: 0.85;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
 
         .event-description {
             color: var(--navy);
             font-size: 0.9rem;
-            line-height: 1.6;
+            line-height: 1.5;
             margin-bottom: 1rem;
             flex-grow: 1;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
         }
 
         .event-meta {
             display: flex;
-            gap: 1rem;
+            gap: 1.5rem;
             margin-bottom: 1rem;
             font-size: 0.85rem;
             color: var(--navy);
-            flex-wrap: wrap;
-        }
-
-        .event-meta span {
-            display: flex;
-            align-items: center;
-            gap: 0.3rem;
         }
 
         .event-meta i {
-            font-size: 0.9rem;
+            margin-right: 0.3rem;
         }
 
         .event-tags {
@@ -358,33 +337,11 @@
         .event-tag {
             background: white;
             color: var(--navy);
-            padding: 0.35rem 0.9rem;
+            padding: 0.3rem 0.8rem;
             border-radius: 15px;
             font-size: 0.75rem;
             font-weight: 600;
             border: 2px solid var(--navy);
-            text-transform: uppercase;
-            letter-spacing: 0.3px;
-        }
-
-        .event-sdgs {
-            display: flex;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .sdg-badge {
-            width: 35px;
-            height: 35px;
-            border: 2px solid var(--navy);
-            border-radius: 5px;
-            object-fit: cover;
-            transition: all 0.2s ease;
-        }
-
-        .sdg-badge:hover {
-            transform: scale(1.1);
         }
 
         .btn-view-details {
@@ -400,14 +357,12 @@
             text-align: center;
             display: inline-block;
             text-decoration: none;
-            letter-spacing: 0.5px;
         }
 
         .btn-view-details:hover {
             background: white;
             color: var(--navy);
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
         /* Sustainable Future Section */
@@ -563,15 +518,6 @@
                 font-size: 2rem;
             }
 
-            .event-title {
-                font-size: 1.1rem;
-                min-height: auto;
-            }
-
-            .event-description {
-                -webkit-line-clamp: 4;
-            }
-
             .sdg-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -579,27 +525,6 @@
             .footer-links {
                 flex-direction: column;
                 gap: 2rem;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .event-meta {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-
-            .event-tags {
-                gap: 0.4rem;
-            }
-
-            .event-tag {
-                font-size: 0.7rem;
-                padding: 0.3rem 0.7rem;
-            }
-
-            .sdg-badge {
-                width: 30px;
-                height: 30px;
             }
         }
     </style>
