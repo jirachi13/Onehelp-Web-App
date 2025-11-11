@@ -141,6 +141,7 @@ composer run dev
 - **[API Documentation](API_DOCUMENTATION.md)** - Complete API reference
 - **[AI Feature Documentation](AI_FEATURE_DOCUMENTATION.md)** - ✨ AI-powered event description generator guide
 - **[Security Documentation](SECURITY.md)** - Security implementation details
+- **[Presentation Script](PRESENTATION_SCRIPT.md)** - 🎤 Complete 5-member presentation script (no placeholders)
 - **[Video Presentation Guide](VIDEO_PRESENTATION_GUIDE.md)** - Comprehensive guide for creating demo videos
 - **[Quick Reference Card](VIDEO_QUICK_REFERENCE.md)** - Printable quick reference for presenters
 - **[App Flow Diagrams](APP_FLOW_DIAGRAMS.md)** - Visual flow diagrams and user journey maps
