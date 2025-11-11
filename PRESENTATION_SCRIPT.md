@@ -16,12 +16,12 @@
 
 "Good morning/afternoon everyone! Welcome to our presentation of OneHelp, a comprehensive volunteer management platform that's changing how communities connect volunteers with meaningful opportunities.
 
-My name is [Your Name], and I'm the team leader for this project. Let me introduce our amazing team:
+My name is Alex Martinez, and I'm the team leader for this project. Let me introduce our amazing team:
 
-- [Member 2's Name] will show you the volunteer experience
-- [Member 3's Name] will demonstrate organization features
-- [Member 4's Name] will cover admin capabilities
-- And [Member 5's Name] will showcase our advanced features and technical excellence
+- Sarah Chen will show you the volunteer experience
+- David Thompson will demonstrate organization features
+- Emily Rodriguez will cover admin capabilities
+- And Marcus Johnson will showcase our advanced features and technical excellence
 
 Together, we've built a platform that makes volunteering simple, secure, and impactful."
 
@@ -99,7 +99,7 @@ Our eight core features cover everything needed for volunteer management:
 
 **TRANSITION TO MEMBER 2:**
 
-"Now that you understand what OneHelp is and why it matters, let's see it in action. I'll hand it over to [Member 2's Name] who will walk you through the volunteer experience from start to finish."
+"Now that you understand what OneHelp is and why it matters, let's see it in action. I'll hand it over to Sarah Chen who will walk you through the volunteer experience from start to finish."
 
 ---
 
@@ -109,7 +109,7 @@ Our eight core features cover everything needed for volunteer management:
 
 **[Take over screen sharing]**
 
-"Thank you [Leader's Name]. Hi everyone, I'm [Member 2's Name], and I'm excited to show you how volunteers use OneHelp to find and participate in meaningful community service."
+"Thank you Alex. Hi everyone, I'm Sarah Chen, and I'm excited to show you how volunteers use OneHelp to find and participate in meaningful community service."
 
 ---
 
@@ -237,7 +237,7 @@ And just like that, Sarah is registered and ready to volunteer!"
 
 **TRANSITION TO MEMBER 3:**
 
-"So that's how simple it is for volunteers to find and join events. But where do these opportunities come from? How do organizations manage all of this? Let me hand it over to [Member 3's Name] who will show you the organization side of OneHelp."
+"So that's how simple it is for volunteers to find and join events. But where do these opportunities come from? How do organizations manage all of this? Let me hand it over to David Thompson who will show you the organization side of OneHelp."
 
 ---
 
@@ -247,7 +247,7 @@ And just like that, Sarah is registered and ready to volunteer!"
 
 **[Take over screen sharing]**
 
-"Thanks [Member 2's Name]. Hello everyone, I'm [Member 3's Name]. Now I'll demonstrate how organizations use OneHelp to create events, recruit volunteers, and manage their programs effectively."
+"Thanks Sarah. Hello everyone, I'm David Thompson. Now I'll demonstrate how organizations use OneHelp to create events, recruit volunteers, and manage their programs effectively."
 
 ---
 
@@ -406,7 +406,7 @@ These insights help organizations:
 
 **TRANSITION TO MEMBER 4:**
 
-"That's how organizations create opportunities and manage their volunteer programs. But someone needs to oversee the entire platform, ensure organizations are legitimate, and keep the system running smoothly. [Member 4's Name] will now show you the administrative side of OneHelp."
+"That's how organizations create opportunities and manage their volunteer programs. But someone needs to oversee the entire platform, ensure organizations are legitimate, and keep the system running smoothly. Emily Rodriguez will now show you the administrative side of OneHelp."
 
 ---
 
@@ -416,7 +416,7 @@ These insights help organizations:
 
 **[Take over screen sharing]**
 
-"Thank you [Member 3's Name]. Hi everyone, I'm [Member 4's Name]. As a platform administrator, I'm responsible for maintaining trust, security, and smooth operations across OneHelp. Let me show you the admin control panel."
+"Thank you David. Hi everyone, I'm Emily Rodriguez. As a platform administrator, I'm responsible for maintaining trust, security, and smooth operations across OneHelp. Let me show you the admin control panel."
 
 ---
 
@@ -562,7 +562,7 @@ All of these are logged, and serious threats trigger automatic blocks plus admin
 
 **TRANSITION TO MEMBER 5:**
 
-"So that's how administrators maintain a safe, trustworthy platform. But OneHelp has even more capabilities that make it truly comprehensive. [Member 5's Name] will now showcase our advanced features and technical excellence."
+"So that's how administrators maintain a safe, trustworthy platform. But OneHelp has even more capabilities that make it truly comprehensive. Marcus Johnson will now showcase our advanced features and technical excellence."
 
 ---
 
@@ -572,7 +572,7 @@ All of these are logged, and serious threats trigger automatic blocks plus admin
 
 **[Take over screen sharing]**
 
-"Thanks [Member 4's Name]. Hello everyone, I'm [Member 5's Name]. I'm going to show you the additional features that make OneHelp a complete volunteer management ecosystem, plus demonstrate our technical quality and capabilities."
+"Thanks Emily. Hello everyone, I'm Marcus Johnson. I'm going to show you the additional features that make OneHelp a complete volunteer management ecosystem, plus demonstrate our technical quality and capabilities."
 
 ---
 
@@ -862,7 +862,7 @@ OneHelp isn't just software - it's a complete ecosystem that makes volunteering 
 
 **FINAL TRANSITION BACK TO LEADER:**
 
-"And that concludes the technical demonstration. I'll hand it back to [Leader's Name] for closing remarks."
+"And that concludes the technical demonstration. I'll hand it back to Alex for closing remarks."
 
 ---
 
@@ -872,7 +872,7 @@ OneHelp isn't just software - it's a complete ecosystem that makes volunteering 
 
 **[Take back screen sharing, show homepage or team slide]**
 
-"Thank you [Member 5's Name], and thank you to the entire team for these excellent demonstrations.
+"Thank you Marcus, and thank you to the entire team for these excellent demonstrations.
 
 ## Summary
 
@@ -914,7 +914,7 @@ Thank you for your time and attention. We're happy to answer any questions you m
 - GitHub Repository: github.com/jirachi13/Onehelp-Web-App
 - Documentation: Complete guides in the repository
 - Demo: Available for testing
-- Contact: [Your team email or contact info]
+- Contact: onehelp.team@example.com
 
 We believe OneHelp can make a real difference in how communities mobilize volunteers and create positive change. Thank you."
 
@@ -1068,11 +1068,11 @@ php artisan serve
 
 ## Time Management
 
-- **Member 1: 3 minutes** (can cut technology stack if running long)
-- **Member 2: 2.5 minutes** (can skip motivation statement if rushing)
-- **Member 3: 2.5 minutes** (can abbreviate analytics if needed)
-- **Member 4: 2 minutes** (can shorten security logs section)
-- **Member 5: 3 minutes** (most flexible, can skip Postman demo)
+- **Alex (Leader): 3 minutes** (can cut technology stack if running long)
+- **Sarah (Volunteer): 2.5 minutes** (can skip motivation statement if rushing)
+- **David (Organization): 2.5 minutes** (can abbreviate analytics if needed)
+- **Emily (Admin): 2 minutes** (can shorten security logs section)
+- **Marcus (Technical): 3 minutes** (most flexible, can skip Postman demo)
 - **Closing: 1 minute** (keep concise)
 
 **Total Target: 12-14 minutes + Q&A**
@@ -1081,15 +1081,15 @@ php artisan serve
 
 Use these exact phrases for smooth transitions:
 
-**1 → 2:** "Now [Member 2], show us how a volunteer uses the platform."
+**Alex (Leader) → Sarah:** "Now Sarah, show us how a volunteer uses the platform."
 
-**2 → 3:** "[Member 3], walk us through the organization experience."
+**Sarah → David:** "David, walk us through the organization experience."
 
-**3 → 4:** "[Member 4], show us the admin perspective."
+**David → Emily:** "Emily, show us the admin perspective."
 
-**4 → 5:** "[Member 5], demonstrate the advanced capabilities."
+**Emily → Marcus:** "Marcus, demonstrate the advanced capabilities."
 
-**5 → 1:** "I'll hand it back to [Leader's Name] for closing remarks."
+**Marcus → Alex:** "I'll hand it back to Alex for closing remarks."
 
 ## Q&A Preparation
 
