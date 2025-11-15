@@ -138,6 +138,7 @@ composer run dev
 
 ## Documentation
 
+- **[Backend Documentation](BACKEND_DOCUMENTATION.md)** - 🏗️ Comprehensive backend architecture guide (file locations, code snippets, database schema)
 - **[User Manual](USER_MANUAL.md)** - 📘 Simple guide for using OneHelp (in plain language)
 - **[API Documentation](API_DOCUMENTATION.md)** - Complete API reference
 - **[AI Feature Documentation](AI_FEATURE_DOCUMENTATION.md)** - ✨ AI-powered event description generator guide
