@@ -5,12 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Volunteer extends Model
+class VolunteerSkill extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = 'volunteer_id';
-    
+    // explicit table name (optional but clarifies intent)
+    protected $table = 'volunteer_skills';
+
     protected $fillable = [
         'user_id',
         'first_name',
